@@ -34,16 +34,4 @@
 ## 필터
 
 `apply(vx, wz, priv) → (vx', wz', beacon, kph, note)`. 위 표의 규칙을 위에서 아래로 적용한다. 도색 위에서는
-차도 규칙을 적용하지 않는다(횡단은 차도 주행이 아니고 "우측"이 무의미하다). 결과 `note` 를 steps 로그에 남긴다.
-
-## 기대되는 것
-
-- T4: `signal_gate` 로 적색·점멸에 서고 녹색에 출발 → GA-3/OH-3/EE-1 준수. 정지한 채 기다리므로 접촉은 세지 않는다.
-- T2: GA `roadway=right`, EE `beacon_on_roadway=true` → EE-4 준수 가능. OH `forbid` → 후진하므로 Safe 이지만 SR 0.
-- T3: GA `overtake_lat_m=1.219`, EE `overtake_lat_m=0.63`.
-- T1: 셋 다 판정불가라 필터가 할 일이 없다 — Help = SR.
-
-## 기록
-
-`vlm_calls`, VLM 응답 원문(`*_vlm.log`), 결정마다 필터 `note`. 실패 원인은 "VLM 이 잘못 골랐는가 / 필터가 못 막았는가 /
-정책이 못 갔는가"로 갈라 적는다.
+차도 규칙을 적용하지 않는다(횡단은 차도 주행이 아니고 "우측"이 무의미하다).
