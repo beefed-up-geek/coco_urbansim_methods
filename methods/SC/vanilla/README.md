@@ -5,7 +5,7 @@
 
 ## 입력
 
-- 법역 하나(`GA|OH|EE`)의 조문 요약(영어, `environment/readme.md` §4 의 임계값을 그대로 쓴 문장들).
+- 법역 하나(`GA|OH|EE`)의 조문 요약(영어, `environments/README.md` §4 의 임계값을 그대로 쓴 문장들).
 - 태스크 설명 한 줄.
 - 특권 상태(`/priv`) 의 `robot, surface, crosswalk, signal, section, pedestrians(list 제외)`.
 - 현재 에고 프레임 1장(선택).
